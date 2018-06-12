@@ -96,14 +96,14 @@ unget_char(ch, file)
 }
 
 
-/* get_string(str, max, file, termstr) : like fgets() but
+/* get_string_cron(str, max, file, termstr) : like fgets() but
  *		(1) has terminator string which should include \n
  *		(2) will always leave room for the null
  *		(3) uses get_char() so LineNumber will be accurate
  *		(4) returns EOF or terminating character, whichever
  */
 int
-get_string(string, size, file, terms)
+get_string_cron(string, size, file, terms)
 	char	*string;
 	int	size;
 	FILE	*file;

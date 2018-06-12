@@ -224,7 +224,7 @@ void	unget_char(int, FILE *),
 		skip_comments(FILE *);
 
 int		get_char(FILE *),
-		get_string(char *, int, FILE *, char *);
+		get_string_cron(char *, int, FILE *, char *);
 
 entry * parse_cron_entry(char *);
 

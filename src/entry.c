@@ -119,7 +119,7 @@ parse_cron_entry(char *schedule)
 		 * anymore.  too much for my overloaded brain. (vix, jan90)
 		 * HINT
 		 */
-		ch = get_string(cmd, MAX_COMMAND, file, " \t\n");
+		ch = get_string_cron(cmd, MAX_COMMAND, file, " \t\n");
 		if (!strcmp("reboot", cmd)) {
 			e->flags |= WHEN_REBOOT;
 		} else if (!strcmp("yearly", cmd) || !strcmp("annually", cmd)){
